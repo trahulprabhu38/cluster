@@ -1,12 +1,12 @@
 {
   "name": "cluster",
-  "homepage": "https://cluster-ds-club.github.io/cluster",
+  "homepage": "https://CLUSTER-DS-Club.github.io/cluster",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
-    "@sctg/vite-plugin-github-pages-spa": "^0.1.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
