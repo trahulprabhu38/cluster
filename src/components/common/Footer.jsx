@@ -2,18 +2,14 @@ import React, { useState, useEffect } from 'react';
 import {
     Zap,
     Mail,
-    Phone,
     MapPin,
-    Github,
-    Twitter,
-    Linkedin,
-    Instagram,
     ArrowUp,
     ExternalLink,
     Heart,
     Send,
     CheckCircle
 } from 'lucide-react';
+import { SiDiscord, SiLinkedin, SiGmail, SiGithub } from 'react-icons/si'; // ✅ Import Discord icon from react-icons
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -29,10 +25,10 @@ const Footer = () => {
     ];
 
     const socialLinks = [
-        { icon: Github, href: 'https://github.com/CLUSTER-DS-Club/', name: 'GitHub', color: 'hover:text-gray-300' },
-        // { icon: Twitter, href: '#', name: 'Twitter', color: 'hover:text-blue-400' },
-        { icon: Linkedin, href: 'https://www.linkedin.com/company/cluster-vips', name: 'LinkedIn', color: 'hover:text-blue-500' },
-        // { icon: Instagram, href: '#', name: 'Instagram', color: 'hover:text-pink-400' }
+        { icon: SiGithub, href: 'https://github.com/CLUSTER-DS-Club/', name: 'GitHub', color: 'hover:text-gray-300' },
+        { icon: SiLinkedin, href: 'https://www.linkedin.com/company/cluster-vips', name: 'LinkedIn', color: 'hover:text-blue-500' },
+        { icon: SiDiscord, href: 'https://discord.gg/6QN83D89vx', name: 'Discord', color: 'hover:text-indigo-400' }, 
+        { icon: SiGmail, href: 'mailto:dsclub.cluster@vips.edu', name: 'GMail', color: 'hover:text-indigo-400' }
     ];
 
     useEffect(() => {

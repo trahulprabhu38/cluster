@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Zap, Users, Search, Bell } from 'lucide-react';
+import { Menu, X, ChevronDown, Zap, Users } from 'lucide-react';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,8 +24,8 @@ const Header = () => {
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                ? 'bg-slate-900/80 backdrop-blur-xl border-b border-cyan-500/20 shadow-lg shadow-cyan-500/10'
-                : 'bg-transparent'
+            ? 'bg-slate-900/80 backdrop-blur-xl border-b border-cyan-500/20 shadow-lg shadow-cyan-500/10'
+            : 'bg-transparent'
             }`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
@@ -85,12 +85,17 @@ const Header = () => {
                         ))}
                     </nav>
 
-                    {/* Action Buttons */}
+                    {/* Action Buttons - Desktop */}
                     <div className="hidden md:flex items-center space-x-4">
-                        <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 flex items-center space-x-2 group">
+                        <a
+                            href="https://discord.gg/6QN83D89vx"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 flex items-center space-x-2 group"
+                        >
                             <Users className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
                             <span>Join Community</span>
-                        </button>
+                        </a>
                     </div>
 
                     {/* Mobile menu button */}
@@ -118,10 +123,15 @@ const Header = () => {
                                 </a>
                             ))}
                             <div className="pt-4 border-t border-slate-700">
-                                <button className="w-full px-3 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 flex items-center justify-center space-x-2">
+                                <a
+                                    href="https://discord.gg/6QN83D89vx"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full block px-3 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 flex items-center justify-center space-x-2"
+                                >
                                     <Users className="w-4 h-4" />
                                     <span>Join Community</span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
