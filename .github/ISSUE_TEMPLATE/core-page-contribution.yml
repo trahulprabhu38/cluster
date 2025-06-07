@@ -1,0 +1,86 @@
+name: "🌐 New Core Page Contribution"
+description: "Help us build the CLUSTER portal by contributing a new page."
+title: "🌐 [Page]: <Page Name>"
+labels: ["core page", "enhancement 🧑‍💻"]
+assignees:
+  - ''
+
+body:
+  - type: input
+    id: page-name
+    attributes:
+      label: "📄 Page Name"
+      placeholder: "E.g., Home, Team, Projects, Events, Resources"
+    validations:
+      required: true
+
+  - type: textarea
+    id: page-purpose
+    attributes:
+      label: "🎯 Purpose of This Page"
+      description: "Why is this page important to the website?"
+      placeholder: "Explain what this page will contain and how it helps CLUSTER members or visitors."
+    validations:
+      required: true
+
+  - type: textarea
+    id: page-content
+    attributes:
+      label: "📚 Expected Content or Sections"
+      description: "What content or layout should be included in this page?"
+      placeholder: |
+        Suggested sections:
+        - Hero Banner
+        - Description / Mission
+        - Cards / Profiles / Graphs
+        - Footer links
+        - Calls to Action
+    validations:
+      required: true
+
+  - type: textarea
+    id: components-needed
+    attributes:
+      label: "🧩 UI Components or Layouts Needed"
+      description: "Mention any reusable components that will be required or need to be created."
+      placeholder: "E.g., ProfileCard, ProjectCard, HeroSection, StatsCounter"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: routing
+    attributes:
+      label: "🔗 Routing Confirmation"
+      options:
+        - label: "I will add a route in `App.jsx` using React Router."
+        - label: "I will place the page inside `src/pages/` as per the project structure."
+
+  - type: textarea
+    id: wireframes
+    attributes:
+      label: "🖼️ Wireframe or Sketch (Optional)"
+      placeholder: "Link to Figma, Excalidraw, or attach image of layout sketch"
+    validations:
+      required: false
+
+  - type: input
+    id: full-name
+    attributes:
+      label: "👤 Full Name"
+      placeholder: "Your full name"
+    validations:
+      required: true
+
+  - type: input
+    id: participant-role
+    attributes:
+      label: "🎓 Participant Role"
+      placeholder: "E.g., GSSOC, SSOC, JWOC, CLUSTER Contributor"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ✅ Thanks for helping shape the CLUSTER portal!  
+        Your request will be reviewed shortly. Please keep your page consistent with the design system and modular folder structure. 💻

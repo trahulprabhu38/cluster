@@ -1,0 +1,76 @@
+name: "🧑‍💻 Enhancement Request"
+description: "Suggest improvements or new features for the CLUSTER DS Club Portal."
+title: '🧑‍💻: '
+labels: ["Up-for-Grabs ✋", "enhancement 🧑‍💻"]
+assignees:
+  - ''
+
+body:
+  - type: input
+    id: enhancement-title
+    attributes:
+      label: "📝 Title"
+      placeholder: "E.g., Improve dashboard UI responsiveness"
+    validations:
+      required: true
+
+  - type: textarea
+    id: enhancement-aim
+    attributes:
+      label: "🎯 Enhancement Objective"
+      description: "What is the goal or benefit of this enhancement?"
+      placeholder: "Describe the purpose of your suggestion. What problem does it solve or what value does it add?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: "🛠️ Proposed Changes"
+      description: "Detail the changes or additions you plan to make."
+      placeholder: "List the components, pages, or functionalities you plan to modify or enhance."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "📷 Screenshots (Optional)"
+      description: "Attach relevant screenshots or UI mockups if available."
+      placeholder: "Write N/A if not available."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: guidelines
+    attributes:
+      label: "✅ Confirmation"
+      description: "Please confirm the following before submitting."
+      options:
+        - label: "I have read the contribution guidelines."
+          required: true
+        - label: "I have linked my latest merged PR (if applicable)."
+          required: false
+
+  - type: input
+    id: full-name
+    attributes:
+      label: "👤 Full Name"
+      placeholder: "Your full name"
+    validations:
+      required: true
+
+  - type: input
+    id: participant-role
+    attributes:
+      label: "🎓 Participant Role"
+      placeholder: "E.g., GSSOC, SSOC, JWOC, CLUSTER Contributor"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        🙌 Thanks for your enhancement suggestion!  
+        The CLUSTER community will review and provide feedback shortly.  
+        Keep innovating! 🚀

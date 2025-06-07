@@ -1,0 +1,76 @@
+name: "📌 Custom Contribution or Suggestion"
+description: "Share a unique idea, improvement, or concern for the CLUSTER DS Club Portal."
+title: "[Custom]: <Brief summary of your idea or issue>"
+labels: ["custom", "status: needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        👋 **Thanks for contributing to the CLUSTER DS Club Portal!**
+        
+        This form is for **custom ideas, feedback, or issues** that don’t quite fit into bug reports, feature requests, or documentation improvements.
+
+        Whether it's about UI/UX, architecture, learning features, or community engagement—drop your thoughts here!
+
+  - type: input
+    id: issue_summary
+    attributes:
+      label: "📝 Summary"
+      description: "Briefly describe your idea, issue, or suggestion."
+      placeholder: "E.g., Suggestion for a new community project dashboard"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: "📋 Detailed Description"
+      description: "Please provide detailed context and background for your idea or issue."
+      placeholder: "Describe the problem, idea, or need. Include relevant context such as the use case, pain point, or enhancement goal."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: "💡 Proposed Solution (Optional)"
+      description: "Have a possible implementation or approach in mind? Share it here."
+      placeholder: "Describe how this could be implemented or resolved..."
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "🚦 Priority"
+      description: "How important is this suggestion to you or the community?"
+      options:
+        - "High - Important for club growth or user experience"
+        - "Medium - Nice to have in future releases"
+        - "Low - Minor or long-term consideration"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: category
+    attributes:
+      label: "📂 Category"
+      description: "What area does this idea or issue relate to?"
+      options:
+        - label: "Learning Experience"
+        - label: "UI/UX or Design"
+        - label: "Dev Workflow / Tooling"
+        - label: "Community Engagement"
+        - label: "Architecture / Refactor"
+        - label: "Other"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "🔍 Additional Context (Optional)"
+      description: "Add any screenshots, references, or resources to support your idea."
+      placeholder: "Link related projects, articles, screenshots, or Discord discussions here..."
+
+  - type: markdown
+    attributes:
+      value: |
+        ✅ **Thanks for your input!**
+        We'll review your submission and discuss it with the community or core team. Your suggestions make CLUSTER better! 🚀
