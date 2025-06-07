@@ -118,9 +118,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📬 Stay Connected
 
-* 💬 [Join our Discord](#) `(Coming Soon)`
+* 💬 [Join our Discord](https://discord.gg/6QN83D89vx)
 * 🧠 [Follow us on LinkedIn](https://www.linkedin.com/company/cluster-vips/)
-* 📣 [Contribute to our Newsletter](#) `(Coming Soon)`
+* 📣 [Join our Newsletter](#) `(Coming Soon)`
 
 <p align="center">
   <b>Made with ❤️ by CLUSTER DS Club</b>
