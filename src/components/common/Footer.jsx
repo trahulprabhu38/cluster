@@ -10,6 +10,7 @@ import {
     CheckCircle
 } from 'lucide-react';
 import { SiDiscord, SiLinkedin, SiGmail, SiGithub } from 'react-icons/si'; // ✅ Import Discord icon from react-icons
+import logo from '/DS_CLUB_LOGO.jpeg';
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -27,7 +28,7 @@ const Footer = () => {
     const socialLinks = [
         { icon: SiGithub, href: 'https://github.com/CLUSTER-DS-Club/', name: 'GitHub', color: 'hover:text-gray-300' },
         { icon: SiLinkedin, href: 'https://www.linkedin.com/company/cluster-vips', name: 'LinkedIn', color: 'hover:text-blue-500' },
-        { icon: SiDiscord, href: 'https://discord.gg/6QN83D89vx', name: 'Discord', color: 'hover:text-indigo-400' }, 
+        { icon: SiDiscord, href: 'https://discord.gg/6QN83D89vx', name: 'Discord', color: 'hover:text-indigo-400' },
         { icon: SiGmail, href: 'mailto:dsclub.cluster@vips.edu', name: 'GMail', color: 'hover:text-indigo-400' }
     ];
 
@@ -79,11 +80,20 @@ const Footer = () => {
                             {/* Logo and Brand */}
                             <div className="flex items-center space-x-4 mb-8">
                                 <div className="relative">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-2xl shadow-cyan-500/25 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                                        <Zap className="w-8 h-8 text-white" />
+                                    {/* Circular background container for the logo */}
+                                    <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-500 rounded-full flex items-center justify-center shadow-2xl shadow-cyan-500/25 transform rotate-3 hover:rotate-0 transition-transform duration-500 overflow-hidden">
+                                        <img
+                                            src={logo}
+                                            alt="Logo"
+                                            className="w-full h-full object-cover rounded-full"
+                                        />
                                     </div>
-                                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full animate-bounce delay-1000"></div>
+
+                                    {/* Animated badge or notification dot */}
+                                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full animate-bounce delay-1000 shadow-md shadow-yellow-400/30"></div>
                                 </div>
+
+                                {/* Text content */}
                                 <div>
                                     <h3 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-1">
                                         CLUSTER

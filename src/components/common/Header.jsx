@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Zap, Users } from 'lucide-react';
+import { Menu, X, ChevronDown, Users } from 'lucide-react';
+import logo from '/DS_CLUB_LOGO.jpeg';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +33,16 @@ const Header = () => {
                     {/* Logo */}
                     <div className="flex items-center space-x-3 group cursor-pointer">
                         <div className="relative">
-                            <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center shadow-lg shadow-cyan-500/25 group-hover:shadow-cyan-500/50 transition-all duration-300 group-hover:scale-110">
-                                <Zap className="w-6 h-6 text-white" />
+                            {/* Circular background for logo */}
+                            <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/25 group-hover:shadow-cyan-500/50 transition-all duration-300 group-hover:scale-110 overflow-hidden">
+                                <img
+                                    src={logo}
+                                    alt="Logo"
+                                    className="w-full h-full object-cover rounded-full" // Ensures image fills and is round
+                                />
                             </div>
-                            <div className="absolute -inset-1 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                            {/* Optional glowing effect on hover */}
+                            <div className="absolute -inset-1 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                         </div>
                         <div>
                             <h1 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
