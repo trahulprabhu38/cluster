@@ -36,7 +36,7 @@ body:
     id: screenshots
     attributes:
       label: "📷 Screenshots"
-      description: "Attach relevant screenshots or UI mockups.
+      description: "Attach relevant screenshots or UI mockups."
     validations:
       required: true
 
