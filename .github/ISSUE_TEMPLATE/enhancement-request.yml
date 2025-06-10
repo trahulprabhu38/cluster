@@ -35,11 +35,11 @@ body:
   - type: textarea
     id: screenshots
     attributes:
-      label: "📷 Screenshots (Optional)"
-      description: "Attach relevant screenshots or UI mockups if available."
-      placeholder: "Write N/A if not available."
+      label: "📷 Screenshots"
+      description: "Attach relevant screenshots or UI mockups."
+      placeholder: ""
     validations:
-      required: false
+      required: true
 
   - type: checkboxes
     id: guidelines
