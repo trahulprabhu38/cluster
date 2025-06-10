@@ -58,7 +58,7 @@ body:
   - type: textarea
     id: wireframes
     attributes:
-      label: "🖼️ Wireframe or Sketch (Optional)"
+      label: "🖼️ Wireframe or Sketch"
       placeholder: "Link to Figma, Excalidraw, or attach image of layout sketch"
     validations:
       required: false
