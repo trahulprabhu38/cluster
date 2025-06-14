@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+2import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Users } from 'lucide-react';
 import logo from '/DS_CLUB_LOGO.jpeg';
 
@@ -16,10 +16,10 @@ const Header = () => {
     }, []);
 
     const navItems = [
-        { name: 'Home', href: '#', hasDropdown: false },
-        { name: 'Community', href: '#', hasDropdown: false },
+        { name: 'Honmmmme', href: '#', hasDropdown: false },
+        { name: 'Commmmmunity', href: '#', hasDropdown: false },
         { name: 'Research', href: '#', hasDropdown: false },
-        { name: 'About', href: '#', hasDropdown: false },
+        { name: 'Ab0000out', href: '#', hasDropdown: false },
         { name: 'Contact', href: '#', hasDropdown: false }
     ];
 
