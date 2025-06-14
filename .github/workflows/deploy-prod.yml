@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
-name: Deploy to Netlify (No Site ID)
+name: Deploy to Netlify (With Site ID)
 
 on:
   push:
@@ -23,12 +23,13 @@ jobs:
         run: cd client && npm install
 
       - name: Build Vite app
-        run:  cd client && npm run build
+        run: cd client && npm run build
 
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
       - name: Deploy to Netlify
-        run:  cd client && netlify deploy --dir=dist --prod --auth=$NETLIFY_AUTH_TOKEN
+        run: cd client && netlify deploy --dir=dist --prod --auth=$NETLIFY_AUTH_TOKEN --site=d9e0b237-f36b-488a-bbbf-2edc9a95fd0e
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
