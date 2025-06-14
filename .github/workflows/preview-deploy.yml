@@ -2,7 +2,7 @@
 name: Netlify Preview Deploy
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - main
 
@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3

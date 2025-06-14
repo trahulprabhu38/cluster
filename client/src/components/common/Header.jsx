@@ -16,10 +16,10 @@ const Header = () => {
     }, []);
 
     const navItems = [
-        { name: 'Hommmmme', href: '#', hasDropdown: false },
+        { name: 'Home', href: '#', hasDropdown: false },
         { name: 'Community', href: '#', hasDropdown: false },
         { name: 'Research', href: '#', hasDropdown: false },
-        { name: 'Ab00000out', href: '#', hasDropdown: false },
+        { name: 'About', href: '#', hasDropdown: false },
         { name: 'Contact', href: '#', hasDropdown: false }
     ];
 
