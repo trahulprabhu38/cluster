@@ -22,10 +22,10 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: cd client && npm install
+        run:  npm install
 
       - name: Build Vite app
-        run: cd client && npm run build
+        run:  npm run build
 
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
@@ -33,7 +33,6 @@ jobs:
       - name: Deploy to Netlify (Preview)
         id: netlify
         run: |
-          cd client
           PREVIEW_URL=$(netlify deploy --dir=dist --auth=$NETLIFY_AUTH_TOKEN --site=d9e0b237-f36b-488a-bbbf-2edc9a95fd0e | grep -Eo 'https://[^ ]+\.netlify\.app')
           echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
         env:
